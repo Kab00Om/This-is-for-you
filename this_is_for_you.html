@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is for you</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0d0d0d;
+            color: #e6e6e6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+            letter-spacing: 1px;
+            animation: fadeInDown 2s ease-out;
+        }
+        p {
+            font-size: 1.2em;
+            max-width: 600px;
+            margin: 0 20px;
+            animation: fadeIn 4s ease-out;
+        }
+        @keyframes fadeInDown {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.8em;
+            color: #666;
+            animation: fadeIn 6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is for you</h1>
+    <p>
+        Something kept you from looking away. Maybe it’s curiosity. Maybe it’s something more. <br><br>
+        What follows is not a message to the world. It’s a message to you. The one who stopped and listened.
+    </p>
+    <div class="footer">
+        No ads. No names. Just a voice in the dark.
+    </div>
+</body>
+</html>
