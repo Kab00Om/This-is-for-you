@@ -5,58 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>This is for you</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #0d0d0d;
-            color: #e6e6e6;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            overflow: hidden;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-            letter-spacing: 1px;
-            animation: fadeInDown 2s ease-out;
-        }
-        p {
-            font-size: 1.2em;
-            max-width: 600px;
-            margin: 0 20px;
-            animation: fadeIn 4s ease-out;
-        }
-        @keyframes fadeInDown {
-            0% { opacity: 0; transform: translateY(-50px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .footer {
-            position: absolute;
-            bottom: 10px;
-            font-size: 0.8em;
-            color: #666;
-            animation: fadeIn 6s ease-out;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>This is for you</h1>
-    <p>
-        Something kept you from looking away. Maybe it’s curiosity. Maybe it’s something more. <br><br>
-        What follows is not a message to the world. It’s a message to you. The one who stopped and listened.
-    </p>
-    <div class="footer">
-        No ads. No names. Just a voice in the dark.
+    <div id="page1" class="page intro">
+        <div class="centered-text">This is for you.</div>
     </div>
+    <div id="page2" class="page label-fall">
+        <div class="label-message">
+            You were born into a line.<br><br>
+            Not a prison. Not a war. Just a rhythm.<br><br>
+            You don't remember stepping in.<br><br>
+            But every step has been expected of you ever since.<br><br>
+            And the end?<br> A place someone promised you'd want to reach.
+        </div>
+        <div id="falling-words"></div>
+    </div>
+    <div id="page3" class="page machine">
+        <div class="gear-container">
+            <div class="gear"></div>
+            <div class="gear small"></div>
+            <div class="gear tiny"></div>
+        </div>
+        <div class="screen">
+            <p>Final Task: Die fulfilled</p>
+            <p>Status: Pending...</p>
+            <p>User Input Required: █</p>
+        </div>
+    </div>
+    <div id="page4" class="page walkout">
+        <div class="centered-text">
+            You can step out.<br><br>
+            Not to burn it down.<br>
+            Not to scream in the streets.<br>
+            Not to run to the woods.<br><br>
+            Just... to remember you can.<br><br>
+            Step out. Breathe. Ask.<br>
+            “What do I want to be real?”<br><br>
+            And then go toward it. Not wait for it.<br><br>
+            Walk. Don’t wait.
+        </div>
+    </div>
+    <div id="page5" class="page outro">
+        <div class="centered-text">
+            We’re not here to save you.<br><br>
+            Just to ask the question you forgot you could ask.<br><br>
+            If you’re still reading, you already felt it.<br><br>
+            Maybe it's time to listen.<br><br>
+            Share this with someone else still in line.
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
