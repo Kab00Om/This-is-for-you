@@ -3,59 +3,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is for you</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>This Is For You</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="page1" class="page intro">
+    <div class="page" id="page1">
         <div class="centered-text">This is for you.</div>
     </div>
-    <div id="page2" class="page label-fall">
-        <div class="label-message">
-            You were born into a line.<br><br>
-            Not a prison. Not a war. Just a rhythm.<br><br>
-            You don't remember stepping in.<br><br>
-            But every step has been expected of you ever since.<br><br>
-            And the end?<br> A place someone promised you'd want to reach.
-        </div>
-        <div id="falling-words"></div>
+    <div class="page" id="page2">
+        <div class="falling-words"></div>
+        <div class="centered-text">You never asked to wait in line.</div>
     </div>
-    <div id="page3" class="page machine">
-        <div class="gear-container">
-            <div class="gear"></div>
-            <div class="gear small"></div>
-            <div class="gear tiny"></div>
-        </div>
-        <div class="screen">
-            <p>Final Task: Die fulfilled</p>
-            <p>Status: Pending...</p>
-            <p>User Input Required: █</p>
+    <div class="page" id="page3">
+        <div class="machine-container">
+            <div class="gears">⚙️⚙️⚙️</div>
+            <div class="screen">
+                <p>Status: Running</p>
+                <p>Task: Stay in line</p>
+            </div>
         </div>
     </div>
-    <div id="page4" class="page walkout">
-        <div class="centered-text">
-            You can step out.<br><br>
-            Not to burn it down.<br>
-            Not to scream in the streets.<br>
-            Not to run to the woods.<br><br>
-            Just... to remember you can.<br><br>
-            Step out. Breathe. Ask.<br>
-            “What do I want to be real?”<br><br>
-            And then go toward it. Not wait for it.<br><br>
-            Walk. Don’t wait.
-        </div>
+    <div class="page" id="page4">
+        <div class="centered-text">[Placeholder for thoughtful transition]</div>
     </div>
-    <div id="page5" class="page outro">
-        <div class="centered-text">
-            We’re not here to save you.<br><br>
-            Just to ask the question you forgot you could ask.<br><br>
-            If you’re still reading, you already felt it.<br><br>
-            Maybe it's time to listen.<br><br>
-            Share this with someone else still in line.
-        </div>
+    <div class="page" id="page5">
+        <div class="centered-text">This isn’t where it ends.</div>
     </div>
-
-    <script src="assets/js/script.js"></script>
+    <div class="click-to-continue" id="clickHint">Click to continue</div>
+    <script src="script.js"></script>
 </body>
 </html>

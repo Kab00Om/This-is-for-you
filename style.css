@@ -1,0 +1,78 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    overflow: hidden;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    box-sizing: border-box;
+    transition: opacity 1s ease;
+}
+
+.page.active {
+    display: flex;
+    opacity: 1;
+}
+
+.centered-text {
+    font-size: 2em;
+}
+
+.falling-words {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.word {
+    position: absolute;
+    font-size: 1em;
+    opacity: 0;
+    animation: fall 5s linear infinite;
+    color: #ccc;
+}
+
+@keyframes fall {
+    0% { top: -10%; opacity: 0; }
+    10% { opacity: 1; }
+    100% { top: 110%; opacity: 0; }
+}
+
+.machine-container {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.screen {
+    background: #222;
+    border: 2px solid #555;
+    padding: 1em;
+    margin-top: 1em;
+    font-family: monospace;
+    color: #0f0;
+}
+
+.click-to-continue {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    color: #aaa;
+}
